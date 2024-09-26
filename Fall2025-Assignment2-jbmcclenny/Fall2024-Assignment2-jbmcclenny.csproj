@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Fall2025_Assignment2_jbmcclenny</RootNamespace>
+    <RootNamespace>Fall2024_Assignment2_jbmcclenny</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jace/Documents/GitHub/CS330-Project2/Fall2025-Assignment2-jbmcclenny/Fall2025-Assignment2-jbmcclenny.csproj": {}
+    "/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/Fall2024-Assignment2-jbmcclenny.csproj": {}
   },
   "projects": {
-    "/Users/jace/Documents/GitHub/CS330-Project2/Fall2025-Assignment2-jbmcclenny/Fall2025-Assignment2-jbmcclenny.csproj": {
+    "/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/Fall2024-Assignment2-jbmcclenny.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2025-Assignment2-jbmcclenny/Fall2025-Assignment2-jbmcclenny.csproj",
-        "projectName": "Fall2025-Assignment2-jbmcclenny",
-        "projectPath": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2025-Assignment2-jbmcclenny/Fall2025-Assignment2-jbmcclenny.csproj",
+        "projectUniqueName": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/Fall2024-Assignment2-jbmcclenny.csproj",
+        "projectName": "Fall2024-Assignment2-jbmcclenny",
+        "projectPath": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/Fall2024-Assignment2-jbmcclenny.csproj",
         "packagesPath": "/Users/jace/.nuget/packages/",
-        "outputPath": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2025-Assignment2-jbmcclenny/obj/",
+        "outputPath": "/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jace/.nuget/NuGet/NuGet.Config"

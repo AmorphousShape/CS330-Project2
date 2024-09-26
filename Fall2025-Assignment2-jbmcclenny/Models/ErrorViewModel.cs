@@ -1,4 +1,4 @@
-namespace Fall2025_Assignment2_jbmcclenny.Models;
+namespace Fall2024_Assignment2_jbmcclenny.Models;
 
 public class ErrorViewModel
 {

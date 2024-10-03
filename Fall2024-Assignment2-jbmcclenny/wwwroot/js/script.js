@@ -10,7 +10,8 @@ function apiSearch() {
         url: 'https://api.bing.microsoft.com' + $.param(params),
         type: 'GET',
         headers: {
-            // This seems insecure? Key should be obfuscated in some way
+            // This is insecure, but this is a free key
+            // Normally, a server-side proxy or a .env file would be used
             'Ocp-Apim-Subscription-Key': 'd5eeb55511064ecfb0ab6eabdcebc447'
         }
     })

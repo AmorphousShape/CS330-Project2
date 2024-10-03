@@ -24,3 +24,15 @@
 .button:hover {
     background-color: #816a6b;
 }
+
+.ui-dialog {
+    background-color: #ac8d8f;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.ui-dialog-title {
+    color: black;
+    align-content: center;
+    margin: 0 auto;
+}

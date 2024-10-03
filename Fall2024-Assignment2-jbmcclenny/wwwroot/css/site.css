@@ -57,6 +57,8 @@ html {
   height: 100%;
 }
 
+
+/* Used some absolute positioning since this is very simple but a grid/flexbox mix is better practice */
 .title {
   position: absolute;
   top: 15%;
@@ -106,6 +108,10 @@ html {
 
 .time {
   visibility: hidden;
+}
+
+.ui-dialog {
+  transition: background-color 0.3s;
 }
 
 .ui-dialog-titlebar {

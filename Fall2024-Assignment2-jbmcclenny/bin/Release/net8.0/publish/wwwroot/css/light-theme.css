@@ -1,0 +1,38 @@
+.title {
+    background-color: #9f2f1d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    transition: background-color 0.3s;
+}
+
+.title:hover {
+    background-color: #772316;
+}
+
+.button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #9f2f1d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #772316;
+}
+
+.ui-dialog {
+    background-color: #9f2f1d;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.ui-dialog-title {
+    color: black;
+    align-content: center;
+    margin: 0 auto;
+}

@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "Fall2024-Assignment2-jbmcclenny.sln"
+    "dotnet.defaultSolution": "Fall2024-Assignment2-jbmcclenny.sln",
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish",
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/464e5a20-c5d1-4fd6-a22c-342577fc9e1f/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Fall2024-Assignment2-jbmcclenny"
 }

@@ -3,8 +3,6 @@
 
 <head>
     <link rel="icon" href="../../wwwroot/favicon.ico">
-    <link rel="stylesheet" href="../../wwwroot/css/site.css">
-
     <!-- jQuery -->
     <script 
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -25,6 +23,9 @@
         integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" 
         crossorigin="anonymous">
     </script>
+
+    <!-- Give custom styling priority -->
+    <link rel="stylesheet" href="../../wwwroot/css/site.css">
     
 </head>
 
@@ -33,14 +34,14 @@
 
     <div class="container">
         <div class="sidebar">
-            <button class="button" id="timeButton">Get Time</button>
+            <button class="button" id="timeButton">Need the time?</button>
             <div class="time" id="time"></div>
         </div>
 
         <div class="main">
             <h1 id="engineName" class="title">Engine Name</h1>
 
-            <div class="searchBar">
+            <div class="searchBar" id="searchBar">
                 <input type="text" id="searchInput" placeholder="Search for...">
             </div>
 

@@ -17,6 +17,14 @@ html {
   }
 }
 
+.title {
+  cursor: default;
+}
+
+.button:hover {
+  cursor: default;
+}
+
 body {
   background-size: cover;
   background-attachment: fixed;
@@ -49,7 +57,18 @@ html {
   height: 100%;
 }
 
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .searchBar {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,12 +77,20 @@ html {
   margin: 20px 0;
 }
 
+.searchButtons {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
 .searchBar input {
-  flex: 1; /* Allow input to grow */
-  max-width: 400px; /* Optional: Limit the maximum width */
-  padding: 10px; /* Padding inside the input */
-  border: 1px solid #ccc; /* Border for the input */
-  border-radius: 5px; /* Rounded corners */
+  flex: 1;
+  max-width: 35em; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
 }
 
 .buttonList {
@@ -81,40 +108,21 @@ html {
   visibility: hidden;
 }
 
-/* Time Dialog Box Styling (NOT FUNCTIONAL YET) */
-.time-dialog .ui-dialog-titlebar {
-  background-color: #577179;
-  color: white; /* Change the text color of the title bar */
-  border: none; /* Remove the border */
-  padding: 10px; /* Add padding */
+.ui-dialog-titlebar {
+  text-align: center;
+  min-height: 1.5em;
 }
 
-.time-dialog .ui-dialog-titlebar-close {
-  color: white; /* Change the color of the close button */
+.ui-dialog-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.time-dialog .ui-dialog-content {
-  font-family: Arial, sans-serif; /* Change the font family */
-  font-size: 14px; /* Change the font size */
-  padding: 20px; /* Add padding */
-  background-color: #f9f9f9; /* Change the background color */
-}
-
-.time-dialog .ui-dialog-buttonpane {
-  background-color: #f1f1f1; /* Change the background color of the button pane */
-  border-top: none; /* Remove the top border */
-  padding: 10px; /* Add padding */
-}
-
-.time-dialog .ui-dialog-buttonpane .ui-button {
-  background-color: #4CAF50; /* Change the background color of the buttons */
-  color: white; /* Change the text color of the buttons */
-  border: none; /* Remove the border */
-  padding: 5px 10px; /* Add padding */
-  border-radius: 3px; /* Add border radius */
-}
-
-
-.time-dialog .ui-dialog-buttonpane .ui-button:hover {
-  background-color: #45a049; /* Change the background color on hover */
+.ui-dialog-content {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold; 
 }

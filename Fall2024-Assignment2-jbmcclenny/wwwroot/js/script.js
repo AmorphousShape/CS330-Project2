@@ -1,20 +1,24 @@
 function apiSearch() {
     var params = {
-        'q': $('#query').val(),
+        'q': $('#searchBar').val(),
         'count': 50,
         'offset': 0,
         'mkt': 'en-us'
     };
 
     $.ajax({
-        url: 'https://api.bing.microsoft.com/v7.0/search?' + $.param(params),
+        url: 'https://api.bing.microsoft.com' + $.param(params),
         type: 'GET',
         headers: {
             // This seems insecure? Key should be obfuscated in some way
-            'Ocp-Apim-Subscription-Key': '42999564ccf2405587028f7b3caf4152'
+            'Ocp-Apim-Subscription-Key': 'd5eeb55511064ecfb0ab6eabdcebc447'
         }
     })
         .done(function (data) {
+
+            // DEBUG
+            console.log(data);
+
             var len = data.webPages.value.length;
             var results = '';
             for (i = 0; i < len; i++) {
@@ -22,7 +26,12 @@ function apiSearch() {
             }
 
             $('#searchResults').html(results);
-            $('#searchResults').dialog();
+            $('<div>').html(results).dialog({
+                title: 'Current Time',
+                width: 300,
+                height: 200,
+                dialogClass: 'search-dialog'
+            });
         })
         .fail(function () {
             alert('error');
@@ -99,7 +108,7 @@ function updateTheme() {
                 changeStylesheet('../../wwwroot/css/brown-theme.css');
             } else {
                 // Main Theme
-                changeStylesheet('../../wwwroot/css/main-theme.css');
+                changeStylesheet('../../wwwroot/css/light-theme.css');
             }
             break;
         default:
@@ -121,15 +130,48 @@ function handleResize() {
 // Listen for window resize events
 $(window).resize(handleResize);
 
+// Make globals for these so they can be updated
+var timeDialog = null;
+var timeInterval = null;
+
 function getTime() {
-    var currentTime = new Date().toLocaleTimeString();
+    var currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     $('#time').html(currentTime);
-    $('<div>').html(currentTime).dialog({
-        title: 'Current Time',
-        width: 300,
-        height: 200,
-        dialogClass: 'time-dialog'
-    });
+
+    // Check if the dialog already exists
+    if (!timeDialog) {
+
+        // Create the dialog if it doesn't exist
+        timeDialog = $('<div id="time-dialog">').html(currentTime).dialog({
+            title: 'Current Time',
+            width: 220,
+            height: 92,
+
+            // Position the dialog in the top right corner of the window
+            position: {
+                my: 'right top',
+                at: 'right top',
+                of: window
+            },
+            close: function() {
+                clearInterval(timeInterval); // Clear the interval when the dialog is closed
+                timeDialog = null; // Reset the dialog reference when closed
+            }
+        });
+
+        // Set an interval to update the time every second
+        timeInterval = setInterval(function() {
+            var updatedTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            $('#time-dialog').html(updatedTime);
+        }, 1000);
+    } else {
+        // Realign the dialog if it already exists
+        timeDialog.dialog('option', 'position', {
+            my: 'right top',
+            at: 'right top',
+            of: window
+        });
+    }
 }
 
 $(document).ready(function () {

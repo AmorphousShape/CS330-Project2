@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fall2024-Assignment2-jbmcclenny")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d117b70701ab91ea2c85edf23a26d8c619b5bb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7563b00a1b15e0b8929041820c2ff144aa6db38")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fall2024-Assignment2-jbmcclenny")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fall2024-Assignment2-jbmcclenny")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,18 +7,14 @@ html {
     font-size: 16px;
   }
   body {
-    background-image: url('../images/landscape-chicago-main.jpeg');
+    background-image: url('/images/landscape-chicago-main.jpeg');
   }
 }
 
 @media (max-width: 768px) {
   body {
-    background-image: url('../images/portrait-chicago-main.jpeg');
+    background-image: url('/images/portrait-chicago-main.jpeg');
   }
-}
-
-.title {
-  cursor: default;
 }
 
 .button:hover {
@@ -41,12 +37,33 @@ html {
   min-height: 100%;
 }
 
-.sidebar {
-  width: 250px; /* Fixed width for the sidebar */
-  padding: 20px; /* Padding inside the sidebar */
+.container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  margin: 10px;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: fit-content;
+  cursor: default;
 }
 
 .main {
@@ -55,22 +72,10 @@ html {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-
-
-/* Used some absolute positioning since this is very simple but a grid/flexbox mix is better practice */
-.title {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .searchBar {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -80,33 +85,48 @@ html {
 }
 
 .searchButtons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-
-.searchBar input {
-  flex: 1;
-  max-width: 35em; 
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px;
-}
-
-.buttonList {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 45vw; 
+  min-height: 50px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .searchResults {
+  display: none;
   visibility: hidden;
 }
 
+.timeButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .time {
+  display: none;
   visibility: hidden;
 }
 

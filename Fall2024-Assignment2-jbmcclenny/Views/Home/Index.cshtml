@@ -1,61 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="innerContainer">
+    <button class="button timeButton" id="timeButton">Need the time?</button>
+    <div class="time" id="time"></div>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fall2024-Assignment2-jbmcclenny</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- jQuery -->
-    <script 
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
-        crossorigin="anonymous">
-    </script>
+    <header>
+        <h1 id="engineName" class="title">Engine Name</h1>
+    </header>
 
-    <!-- jQueryUI -->
-    <link 
-        rel="stylesheet" 
-        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" 
-        integrity="sha384-AUxBc4TYOEuk4Hp24650vW1R1zXkuFE8IK5cgdi5qyXRKuc1Xx2ndBiefujL0Qho" 
-        crossorigin="anonymous">
+    <article class="searchBar" id="searchBar">
 
-    <!-- jQueryUI Theme -->
-    <script 
-        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" 
-        integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" 
-        crossorigin="anonymous">
-    </script>
-
-    <!-- Give custom styling priority -->
-    <link rel="stylesheet" href="/css/site.css">
-    
-</head>
-
-<body>
-    <script type="text/javascript" src="/js/script.js"></script>
-
-    <div class="container">
-        <div class="sidebar">
-            <button class="button" id="timeButton">Need the time?</button>
-            <div class="time" id="time"></div>
+        <div class="searchInput">
+            <input type="text" class="searchBox" id="searchBox" placeholder="Search for...">
         </div>
-
-        <div class="main">
-            <h1 id="engineName" class="title">Engine Name</h1>
-
-            <div class="searchBar" id="searchBar">
-                <input type="text" id="searchInput" placeholder="Search for...">
-            </div>
-
-            <div class="searchButtons">
-                <button class="button" id="searchButton">Search</button>
-                <button class="button" id="luckyButton">Feeling Lucky?</button>
-            </div>
-
-            <div class="searchResults" id="searchResults"></div>
+        <br>
+        <div class="searchButtons">
+            <button class="button" id="searchButton">Search</button>
+            <button class="button" id="luckyButton">Feeling Lucky?</button>
         </div>
-    </div>
-</body>
+    </article>
 
-</html>
+    <div class="searchResults" id="searchResults"></div>
+</div>

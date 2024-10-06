@@ -3,21 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@ViewData["Title"] - Fall2024_Assignment2_jbmcclenny</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
-    <!-- <link rel="stylesheet" href="~/Fall2024_Assignment2_jbmcclenny.styles.css" asp-append-version="true" /> -->
+    <!-- jQueryUI Theme -->
+    <link 
+        rel="stylesheet" 
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" 
+        integrity="sha384-AUxBc4TYOEuk4Hp24650vW1R1zXkuFE8IK5cgdi5qyXRKuc1Xx2ndBiefujL0Qho"
+        crossorigin="anonymous">
+
+    <!-- Give custom styling priority -->
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-3 main-content">
             @RenderBody()
         </main>
     </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/script.js" asp-append-version="true"></script>
+
+    <!-- jQuery & UI -->
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" 
+        integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Scripting -->
+    <script src="https://fall2024-assignment2-jbmcclenny.azurewebsites.net/js/script.js" defer></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

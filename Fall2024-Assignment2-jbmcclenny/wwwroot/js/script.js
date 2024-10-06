@@ -1,4 +1,4 @@
-function apiSearch() {
+function apiSearch(isLucky) {
     var params = {
         'q': $('#searchBox').val(),
         count: 50,
@@ -18,6 +18,13 @@ function apiSearch() {
         .done(function (data) {
             var len = data.webPages.value.length;
             var results = '';
+
+            if (isLucky && len > 0) {
+                // Redirect to the first search result
+                window.location.href = data.webPages.value[0].url;
+                return;
+            }
+
             for (i = 0; i < len; i++) {
                 results += `<p><a href="${data.webPages.value[i].url}">${data.webPages.value[i].name}</a>: ${data.webPages.value[i].snippet}</p>`;
             }
@@ -218,7 +225,13 @@ $(document).ready(function () {
     // This saves some extra script here
     handleResize();
 
-    $('#searchButton').click(apiSearch);
+    $('#searchButton').click(function () {
+        apiSearch(false);
+    });
+
+    $('#luckyButton').click(function () {
+        apiSearch(true);
+    });
     $('#engineName').click(changeTheme);
     $('#timeButton').click(getTime);
 });

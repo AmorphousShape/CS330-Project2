@@ -1,7 +1,0 @@
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/Fall2024-Assignment2-jbmcclenny
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/appsettings.Development.json
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/appsettings.json
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/Fall2024-Assignment2-jbmcclenny.dll
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/Fall2024-Assignment2-jbmcclenny.deps.json
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/Fall2024-Assignment2-jbmcclenny.runtimeconfig.json
-/Users/jace/Documents/GitHub/CS330-Project2/Fall2024-Assignment2-jbmcclenny/bin/Release/net8.0/publish/Fall2024-Assignment2-jbmcclenny.pdb

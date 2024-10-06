@@ -32,15 +32,19 @@ function apiSearch(isLucky) {
             $('#searchResults').html(results);
             $('#searchResults').dialog({
                 title: "Search Results",
-                height: $(window).height(),
-                width: $(window).width() * 0.3,
+                height: $(window).height() * 0.4,
+                width: $(window).width(),
                 position: {
-                    my: 'right top',
-                    at: 'right top',
+                    my: 'right bottom',
+                    at: 'right bottom',
                     of: window
                 },
                 close: function () {
                     $('#searchResults').css("visibility", "hidden");
+
+                    // Move searchBar and header back to their original positions
+                    $('#searchBar').slideDown(500);
+                    $('header').slideDown(500);
                 }
             });
 
